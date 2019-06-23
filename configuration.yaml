@@ -1,0 +1,127 @@
+
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 34.0549
+  longitude: -118.2578
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Los_Angeles
+  # Customization file
+  customize: !include customize.yaml
+  auth_providers:
+    - type: legacy_api_password
+      api_password: 76682808280
+    - type: trusted_networks
+      trusted_networks:
+        - 192.168.1.0/24
+        - 127.0.0.1
+    - type: homeassistant
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Discover some devices automatically
+discovery:
+  enable:
+    - homekit
+# Sensors
+sensor:
+  # Weather prediction
+  - platform: yr
+  - platform: mqtt
+    name: "Living Room Temp"
+    state_topic: "home/Living_room/1/temp"
+    qos: 1
+    unit_of_measurement: "°C"
+    value_template: "{{ value_json.Temp }}"
+  
+  - platform: mqtt
+    name: "Living Room Humidity"
+    state_topic: "home/Living_room/1/temp"
+    qos: 1
+    unit_of_measurement: "%"
+    value_template: "{{ value_json.Humidity }}"  
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+#MQTT服务器设置
+mqtt:
+  broker: 192.168.1.200
+  port: 1883
+  client_id: hass-base-n1
+  keepalive: 60
+  #服务器用户名
+  username: pi
+  #密码
+  password: raspberry
+  protocol: 3.1.1
+  discovery: true
+
+
+recorder:
+  purge_interval: 7
+  purge_keep_days: 7
+  db_url: mysql://hass:raspberry@127.0.0.1/hassdatabase?charset=utf8
+
+
+logger:
+  default: warn
+
+homekit:
+  auto_start: false
+  name: ProcanSL
+  filter:
+    exclude_entities:
+      - automation.start_homekit
+      - remote.konke_ir
+    # include_entities:
+      # - light.aeon_labs_dsc19103_micro_smart_dimmer_2nd_edition_level
+      # - sensor.aeon_labs_dsc19103_micro_smart_dimmer_2nd_edition_energy
+zwave:
+  usb_path: /dev/zwave
+  
+# remote:
+  # - platform: xiaomi_miio
+    # host: 192.168.1.207
+    # token: 0ed588bc388fff09290a02676061ddb9
+smartir:
+  update_branch: rc
+switch:
+  - platform: broadlink
+    host: 192.168.1.93
+    mac: '34:EA:34:44:43:AC'
+  - platform: konke
+    name: switch1
+    host: 192.168.1.75
+    model: minik
+remote:
+  - platform: konke
+    host: 192.168.1.75
+    name: konke_ir_xfang
+    model: minik
+    hidden: false
+    type: ir
+    
+climate:
+  - platform: smartir
+    name: Office AC
+    unique_id: office_ac
+    device_code: 1100
+    controller_data: 192.168.1.93
+    temperature_sensor: sensor.living_room_temp
+    humidity_sensor: sensor.living_room_humidity
+    # power_sensor: binary_sensor.ac_power

@@ -1,0 +1,37 @@
+2019-06-23 09:47:25 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for smartir which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you do experience issues with Home Assistant.
+2019-06-23 09:47:26 WARNING (MainThread) [homeassistant.components.http.auth] legacy_api_password support has been enabled.
+2019-06-23 09:47:29 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=79 from 2019-06-22 10:46:18)
+2019-06-23 09:47:36 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for konke which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you do experience issues with Home Assistant.
+2019-06-23 09:47:48 WARNING (MainThread) [homeassistant.components.switch] Setup of platform broadlink is taking over 10 seconds.
+2019-06-23 09:47:48 ERROR (SyncWorker_13) [homeassistant.components.broadlink.switch] Failed to connect to device
+2019-06-23 09:47:48 WARNING (MainThread) [homeassistant.helpers.config_validation] Your configuration contains extra keys that the platform does not support.
+Please remove [ip], [ver]. 
+Configuration source: MQTT (topic: 'homeassistant/switch/hassmart_2key_module_C0F824_1/config'). 
+Offending data: {"name": "kt1_C0F824_1", "command_topic": "hassmart/switch/hassmart_2key_module_C0F824_1/set", "state_topic": "hassmart/switch/hassmart_2key_module_C0F824_1/state", "ip": "192.168.1.74", "ver": "1.5", "qos": "<redacted>", "retain": "<redacted>", "platform": "mqtt"}
+2019-06-23 09:47:48 WARNING (MainThread) [homeassistant.helpers.config_validation] Your configuration contains extra keys that the platform does not support.
+Please remove [ip], [ver]. 
+Configuration source: MQTT (topic: 'homeassistant/switch/hassmart_2key_module_C0F824_2/config'). 
+Offending data: {"name": "kt1_C0F824_2", "command_topic": "hassmart/switch/hassmart_2key_module_C0F824_2/set", "state_topic": "hassmart/switch/hassmart_2key_module_C0F824_2/state", "ip": "192.168.1.74", "ver": "1.5", "qos": "<redacted>", "retain": "<redacted>", "platform": "mqtt"}
+2019-06-23 14:47:53 WARNING (MainThread) [homeassistant.components.zwave] Z-Wave not ready after 18004 seconds, continuing anyway
+2019-06-23 14:47:56 ERROR (MainThread) [homeassistant.components.updater] Got unexpected response: None
+2019-06-23 14:48:14 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.6/site-packages/homeassistant/components/homekit_controller/connection.py", line 123, in async_refresh_entity_map
+    self.pairing.list_accessories_and_characteristics,
+  File "/usr/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.6/site-packages/homekit/controller/ip_implementation.py", line 73, in list_accessories_and_characteristics
+    self.session = IpSession(self.pairing_data)
+  File "/srv/homeassistant/lib/python3.6/site-packages/homekit/controller/ip_implementation.py", line 416, in __init__
+    c2a_key, a2c_key = get_session_keys(conn, pairing_data, write_fun)
+  File "/srv/homeassistant/lib/python3.6/site-packages/homekit/protocol/__init__.py", line 392, in get_session_keys
+    response_tlv = write_fun(request_tlv, step3_expectations)
+  File "/srv/homeassistant/lib/python3.6/site-packages/homekit/protocol/__init__.py", line 80, in write_http
+    resp = connection.getresponse()
+  File "/usr/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/usr/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response

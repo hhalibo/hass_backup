@@ -1,0 +1,12 @@
+{
+  "D7:7E:96:08:12:ED": {
+    "AccessoryPairingID": "D7:7E:96:08:12:ED",
+    "AccessoryLTPK": "d4fb619b85c7d2713cdb13384b86efe7aefa99281c1add5f83338453e09365e5",
+    "iOSPairingId": "0ab6dff1-1b62-478a-88a8-38461a52d43e",
+    "iOSDeviceLTSK": "34dad8b3e4e5c30282f8c1f2ee6cc6ca7bcd71088cf1f8f5c299e9663e52f290",
+    "iOSDeviceLTPK": "1c289a1e194b51a0db947edfabf12e85eb05695daabcae636e0954fd7a6fd038",
+    "AccessoryIP": "192.168.1.201",
+    "AccessoryPort": 51827,
+    "Connection": "IP"
+  }
+}

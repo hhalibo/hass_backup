@@ -1,0 +1,31 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "7599593669984f2ca3caf122881b3739",
+                "options": {},
+                "source": "import",
+                "title": "configuration.yaml",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "network_key": null,
+                    "usb_path": "/dev/zwave"
+                },
+                "domain": "zwave",
+                "entry_id": "2ec781d552fe4a2aadc0f79e9b9939f6",
+                "options": {},
+                "source": "import",
+                "title": "Z-Wave (import from configuration.yaml)",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

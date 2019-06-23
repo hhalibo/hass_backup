@@ -1,0 +1,161 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "person.shu_lian_zhi_neng",
+                "name": null,
+                "platform": "person",
+                "unique_id": "1540cdcb808047779c950b1b4852958b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clp_360_series_192_168_1_3_toner_magenta",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z88MBJBCB0005MW_toner_magenta"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clp_360_series_192_168_1_3_toner_black",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z88MBJBCB0005MW_toner_black"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clp_360_series_192_168_1_3_toner_yellow",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z88MBJBCB0005MW_toner_yellow"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clp_360_series_192_168_1_3_toner_cyan",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z88MBJBCB0005MW_toner_cyan"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clp_360_series_192_168_1_3",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z88MBJBCB0005MW_main"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeon_labs_zw090_z_stick_gen5_eu",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeon_labs_dsc19103_micro_smart_dimmer_2nd_edition",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-2"
+            },
+            {
+                "config_entry_id": "2ec781d552fe4a2aadc0f79e9b9939f6",
+                "device_id": "77591f2fefda4f06bf14af877caf484e",
+                "disabled_by": null,
+                "entity_id": "sensor.aeon_labs_dsc19103_micro_smart_dimmer_2nd_edition_power",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076496002"
+            },
+            {
+                "config_entry_id": "2ec781d552fe4a2aadc0f79e9b9939f6",
+                "device_id": "77591f2fefda4f06bf14af877caf484e",
+                "disabled_by": null,
+                "entity_id": "sensor.aeon_labs_dsc19103_micro_smart_dimmer_2nd_edition_voltage",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076496130"
+            },
+            {
+                "config_entry_id": "2ec781d552fe4a2aadc0f79e9b9939f6",
+                "device_id": "77591f2fefda4f06bf14af877caf484e",
+                "disabled_by": null,
+                "entity_id": "sensor.aeon_labs_dsc19103_micro_smart_dimmer_2nd_edition_current",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076496194"
+            },
+            {
+                "config_entry_id": "2ec781d552fe4a2aadc0f79e9b9939f6",
+                "device_id": "77591f2fefda4f06bf14af877caf484e",
+                "disabled_by": null,
+                "entity_id": "light.aeon_labs_dsc19103_micro_smart_dimmer_2nd_edition_level",
+                "name": "\u8c03\u5149\u706f",
+                "platform": "zwave",
+                "unique_id": "2-72057594076299265"
+            },
+            {
+                "config_entry_id": "2ec781d552fe4a2aadc0f79e9b9939f6",
+                "device_id": "77591f2fefda4f06bf14af877caf484e",
+                "disabled_by": null,
+                "entity_id": "sensor.aeon_labs_dsc19103_micro_smart_dimmer_2nd_edition_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076495874"
+            },
+            {
+                "config_entry_id": "2ec781d552fe4a2aadc0f79e9b9939f6",
+                "device_id": "77591f2fefda4f06bf14af877caf484e",
+                "disabled_by": null,
+                "entity_id": "sensor.aeon_labs_dsc19103_micro_smart_dimmer_2nd_edition_previous_reading",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076495890"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "remote.xiaomi_miio_192_168_1_207",
+                "name": null,
+                "platform": "xiaomi_miio",
+                "unique_id": "lumi.acpartner.v2-78:11:DC:63:4F:57"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.office_ac",
+                "name": null,
+                "platform": "smartir",
+                "unique_id": "office_ac"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "remote.konke_ir",
+                "name": null,
+                "platform": "konke",
+                "unique_id": "None:IR"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

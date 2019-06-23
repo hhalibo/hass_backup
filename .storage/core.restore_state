@@ -1,0 +1,143 @@
+{
+    "data": [
+        {
+            "last_seen": "2019-06-23T07:17:55.011054+00:00",
+            "state": {
+                "attributes": {
+                    "commands_encoding": "Base64",
+                    "current_humidity": 50.3,
+                    "current_temperature": 28.4,
+                    "device_code": 1100,
+                    "fan_list": [
+                        "low",
+                        "mid",
+                        "high",
+                        "auto"
+                    ],
+                    "fan_mode": "mid",
+                    "friendly_name": "Office AC",
+                    "last_on_operation": "heat",
+                    "manufacturer": "Daikin",
+                    "max_temp": 30.0,
+                    "min_temp": 18.0,
+                    "operation_list": [
+                        "off",
+                        "heat",
+                        "cool",
+                        "auto"
+                    ],
+                    "operation_mode": "off",
+                    "supported_controller": "Broadlink",
+                    "supported_features": 4289,
+                    "supported_models": [
+                        "Unknown"
+                    ],
+                    "target_temp_step": 1.0,
+                    "temperature": 24
+                },
+                "context": {
+                    "id": "410151a19c2a408c932fae931beb91cb",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "climate.office_ac",
+                "last_changed": "2019-06-23T01:47:38.853558+00:00",
+                "last_updated": "2019-06-23T07:17:24.329515+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-06-23T07:17:55.011054+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "\u6570\u8054\u667a\u80fd",
+                    "id": "1540cdcb808047779c950b1b4852958b",
+                    "user_id": "0352a1d66f1f49749e37002846d2f202"
+                },
+                "context": {
+                    "id": "0886a13b06654478b3244f43bd0322c8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.shu_lian_zhi_neng",
+                "last_changed": "2019-06-23T01:47:38.855091+00:00",
+                "last_updated": "2019-06-23T01:47:48.944650+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-06-23T07:17:55.011054+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Start HomeKit",
+                    "hidden": true,
+                    "last_triggered": "2019-06-23T06:47:57.250829+00:00"
+                },
+                "context": {
+                    "id": "ea30c339faa84c7a8e95707d4ad28448",
+                    "parent_id": "e6583da67f1f4b73b086b74253523f1f",
+                    "user_id": null
+                },
+                "entity_id": "automation.start_homekit",
+                "last_changed": "2019-06-23T01:47:48.951284+00:00",
+                "last_updated": "2019-06-23T06:47:57.251411+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-06-23T07:17:55.011054+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "kt1_C0F824_1"
+                },
+                "context": {
+                    "id": "3d2997dbc92042508ca698fb5b5c6aff",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.kt1_c0f824_1",
+                "last_changed": "2019-06-23T01:47:48.901312+00:00",
+                "last_updated": "2019-06-23T01:47:48.901312+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-06-23T07:17:55.011054+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "kt1_C0F824_2"
+                },
+                "context": {
+                    "id": "2fd9b59aaa3f4d2fbdd2c4b67775b462",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.kt1_c0f824_2",
+                "last_changed": "2019-06-23T01:47:48.910072+00:00",
+                "last_updated": "2019-06-23T01:47:48.910072+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-06-19T02:44:32.080472+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Z-Wave Network Ready",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "70b784df938f400bbc5a2fba7a2aedfd",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.z_wave_network_ready",
+                "last_changed": "2019-06-19T02:35:31.991553+00:00",
+                "last_updated": "2019-06-19T02:35:31.991553+00:00",
+                "state": "on"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

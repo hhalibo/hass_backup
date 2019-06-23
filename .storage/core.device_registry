@@ -1,0 +1,28 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2ec781d552fe4a2aadc0f79e9b9939f6"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "77591f2fefda4f06bf14af877caf484e",
+                "identifiers": [
+                    [
+                        "zwave",
+                        2
+                    ]
+                ],
+                "manufacturer": "AEON Labs",
+                "model": "DSC19103 Micro Smart Dimmer (2nd Edition)",
+                "name": "AEON Labs DSC19103 Micro Smart Dimmer (2nd Edition)",
+                "name_by_user": null,
+                "sw_version": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}
