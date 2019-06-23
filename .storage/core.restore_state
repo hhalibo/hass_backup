@@ -1,12 +1,12 @@
 {
     "data": [
         {
-            "last_seen": "2019-06-23T07:17:55.011054+00:00",
+            "last_seen": "2019-06-23T07:32:56.010315+00:00",
             "state": {
                 "attributes": {
                     "commands_encoding": "Base64",
-                    "current_humidity": 50.3,
-                    "current_temperature": 28.4,
+                    "current_humidity": 50.6,
+                    "current_temperature": 28.2,
                     "device_code": 1100,
                     "fan_list": [
                         "low",
@@ -36,18 +36,18 @@
                     "temperature": 24
                 },
                 "context": {
-                    "id": "410151a19c2a408c932fae931beb91cb",
+                    "id": "8fd310230f2e4a6f8e1e0454cf2f61bd",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.office_ac",
                 "last_changed": "2019-06-23T01:47:38.853558+00:00",
-                "last_updated": "2019-06-23T07:17:24.329515+00:00",
+                "last_updated": "2019-06-23T07:31:24.473399+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2019-06-23T07:17:55.011054+00:00",
+            "last_seen": "2019-06-23T07:32:56.010315+00:00",
             "state": {
                 "attributes": {
                     "editable": true,
@@ -67,7 +67,7 @@
             }
         },
         {
-            "last_seen": "2019-06-23T07:17:55.011054+00:00",
+            "last_seen": "2019-06-23T07:32:56.010315+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Start HomeKit",
@@ -86,7 +86,7 @@
             }
         },
         {
-            "last_seen": "2019-06-23T07:17:55.011054+00:00",
+            "last_seen": "2019-06-23T07:32:56.010315+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "kt1_C0F824_1"
@@ -103,7 +103,7 @@
             }
         },
         {
-            "last_seen": "2019-06-23T07:17:55.011054+00:00",
+            "last_seen": "2019-06-23T07:32:56.010315+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "kt1_C0F824_2"
